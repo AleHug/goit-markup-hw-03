@@ -1,103 +1,178 @@
 :root {
-    --accent-first-color: #FFFFFF;
-    --accent-second-color: #2196F3;
-    --accent-third-color: #757575;
-    --accent-fouhrt-color: #212121;
+  --accent-first-font-family: 'Roboto', sans-serif;
+  --accent-second-font-family: 'Raleway', sans-serif;
+  --accent-first-color: #ffffff;
+  --accent-second-color: #2196f3;
+  --accent-third-color: #757575;
+  --accent-fouhrt-color: #212121;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid red;
+}
+
+
 body {
-    font-family: 'Roboto', sans-serif;    
+  font-family: var(--accent-first-font-family);
 }
 
 /*--------------- Components ---------------*/
 .footer {
-    background: #2F303A;
-} 
+  background: #2f303a;
+}
 
 .logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: var(--accent-second-color);    
+  font-family: var(--accent-second-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--accent-second-color);
 }
 
 .black {
-    color: #000000;
+  color: #000000;
 }
 
 .white {
-    color: var(--accent-first-color);
+  color: var(--accent-first-color);
 }
 
 .navi-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--accent-fouhrt-color);
-}
-
-.hedar-mail,
-.hedar-tel {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--accent-third-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-fouhrt-color);
 }
 
 .navi-link:hover,
 .navi-link:focus,
-.hedar-mail:hover,
-.hedar-mail:focus,
-.hedar-tel:hover,
-.hedar-tel:focus {
-    color: var(--accent-second-color);
+.heder-mail:hover,
+.heder-mail:focus,
+.heder-tel:hover,
+.heder-tel:focus {
+  color: var(--accent-second-color);
 }
 
 /*--------------- Components ---------------*/
 
+/*--------------- Heder ---------------*/
+
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navi-list {
+    display: flex;
+    align-items: center;
+}
+
+.heder-mail,
+.heder-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-third-color);
+}
+
+.heder-mail {
+    margin-right: 50px;
+}
+
+.logo {
+    margin-right: 93px;
+}
+
+.navi-intem:not(:last-child) {
+    margin-right: 50px;
+}
+
+.heder-list {
+    display: flex;
+    align-items: center;
+}
+
 /*--------------- Hero ---------------*/
 
-.hero{
-    background: #2F303A;
+.hero {
+  background: #2f303a;
+  outline: 2px solid red;
+  
+
 }
 .hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--accent-first-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-first-color);
+  outline: 2px solid green;
 }
 
 .hero-btn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    background: var(--accent-second-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: var(--accent-first-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background: var(--accent-second-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--accent-first-color);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: #188CE8;
-    color: var(--accent-first-color);
+  background-color: #188ce8;
+  color: var(--accent-first-color);
 }
 
 /*--------------- /Hero ---------------*/
@@ -105,19 +180,19 @@ body {
 /*--------------- Advantages ---------------*/
 
 .advantages-subtitle {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
 }
 
 .advantages-text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--accent-third-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-third-color);
 }
 
 /*--------------- /Advantages ---------------*/
@@ -125,11 +200,11 @@ body {
 /*--------------- What are we doing ---------------*/
 
 .we-doing-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--accent-fouhrt-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--accent-fouhrt-color);
 }
 
 /*--------------- /What are we doing ---------------*/
@@ -137,30 +212,30 @@ body {
 /*--------------- Our team ---------------*/
 
 .team {
-    background: #F5F4FA;
+  background: #f5f4fa;
 }
 
 .team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--accent-fouhrt-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--accent-fouhrt-color);
 }
 
 .team-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--accent-fouhrt-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-fouhrt-color);
 }
 
 .team-position {
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--accent-third-color);
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-third-color);
 }
 
 /*--------------- /Our team ---------------*/
@@ -168,45 +243,46 @@ body {
 /*--------------- Footer ---------------*/
 
 .footer-address {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--accent-first-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-first-color);
 }
 
 .footer-mail,
 .footer-tel {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /*--------------- /Footer ---------------*/
 
 .address {
-    font-style: normal;
+  font-style: normal;
 }
 
 /*--------------- Portfolio ---------------*/
 
 .menu-btn {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-    background: #F5F4FA;
-    border-radius: 4px;
-    color: var(--accent-fouhrt-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background: #f5f4fa;
+  border-radius: 4px;
+  color: var(--accent-fouhrt-color);
 }
 
 .menu-btn:hover,
-.menu-btn:focus {    
-    color: var(--accent-first-color);  
-    background: var(--accent-second-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+.menu-btn:focus {
+  color: var(--accent-first-color);
+  background: var(--accent-second-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /*--------------- /Portfolio ---------------*/
@@ -214,18 +290,18 @@ body {
 /*--------------- Portfolio gallery---------------*/
 
 .gallery-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2.0;
-    letter-spacing: 0.06em;
-    color: var(--accent-fouhrt-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--accent-fouhrt-color);
 }
 
 .gallery-description {
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: var(--accent-third-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--accent-third-color);
 }
 
 /*--------------- /Portfolio gallery---------------*/
