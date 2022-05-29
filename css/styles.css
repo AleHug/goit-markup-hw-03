@@ -34,23 +34,26 @@ img {
 }
 
 .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    outline: 2px solid red;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
 }
-
 
 body {
   font-family: var(--accent-first-font-family);
 }
 
-/*--------------- Components ---------------*/
-.footer {
-  background: #2f303a;
+.section {
+  background: #e5e5e5;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 2px solid blue;
 }
+
+/*--------------- Components ---------------*/
 
 .logo {
   font-family: var(--accent-second-font-family);
@@ -87,30 +90,39 @@ body {
   color: var(--accent-second-color);
 }
 
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--accent-fouhrt-color);
+}
+
 /*--------------- Components ---------------*/
 
 /*--------------- Heder ---------------*/
 
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .page-header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .page-navigation {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navi-list {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .heder-mail,
@@ -123,30 +135,31 @@ body {
 }
 
 .heder-mail {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 
 .logo {
-    margin-right: 93px;
+  margin-right: 93px;
 }
 
 .navi-intem:not(:last-child) {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 
 .heder-list {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /*--------------- Hero ---------------*/
 
 .hero {
   background: #2f303a;
+  justify-content: space-between;
+  text-align: center;
   outline: 2px solid red;
-  
-
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -154,10 +167,12 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-first-color);
-  outline: 2px solid green;
+  margin: 0px 0px 30px;
 }
 
 .hero-btn {
+  min-width: 200px;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -179,6 +194,19 @@ body {
 
 /*--------------- Advantages ---------------*/
 
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.advantages-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+}
+
 .advantages-subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -186,6 +214,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  margin-bottom: 10px;
 }
 
 .advantages-text {
@@ -199,12 +228,17 @@ body {
 
 /*--------------- What are we doing ---------------*/
 
-.we-doing-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--accent-fouhrt-color);
+.we-doing-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.we-doing-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
 }
 
 /*--------------- /What are we doing ---------------*/
@@ -215,12 +249,36 @@ body {
   background: #f5f4fa;
 }
 
-.team-title {
+.team-list-item {
+  width: 270px;
+  background: #ffffff;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.14),
+    3px 0px 1px rgba(0, 0, 0, 0.12);
+}
+
+.title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-fouhrt-color);
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.team-list-item {
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 120px) / 4);
 }
 
 .team-name {
@@ -229,6 +287,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-fouhrt-color);
+  padding: 30px 0 10px;
 }
 
 .team-position {
@@ -236,17 +295,31 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-third-color);
+  padding: 0 0 30px;
 }
 
 /*--------------- /Our team ---------------*/
 
 /*--------------- Footer ---------------*/
 
+.footer {
+  background: #2f303a;
+  bpadding-top: 60px;
+  bpadding-bottom: 60px;
+}
+
+.logo-footer {
+    padding-top: 60px;
+    margin-top: 70px;
+     outline: 2px solid blue;
+}
+
 .footer-address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-first-color);
+  boutline: 2px solid red;
 }
 
 .footer-mail,
@@ -255,13 +328,15 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  boutline: 2px solid red;
 }
-
-/*--------------- /Footer ---------------*/
 
 .address {
   font-style: normal;
 }
+
+/*--------------- /Footer ---------------*/
+
 
 /*--------------- Portfolio ---------------*/
 
