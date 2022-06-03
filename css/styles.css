@@ -139,7 +139,7 @@ body {
   margin-right: 50px;
 }
 
-.logo {
+.logo-header-link {
   margin-right: 93px;
 }
 
@@ -326,7 +326,7 @@ body {
   padding-bottom: 60px;
 }
 
-.logo {
+.logo-footer-link {
   display: block;
   margin-bottom: 20px;
 }
